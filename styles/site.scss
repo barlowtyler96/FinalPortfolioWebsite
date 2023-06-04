@@ -1,0 +1,39 @@
+$primary: #9ed361;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+#mypic{
+    width: 300px;
+    padding-bottom: 50px;
+}
+#phead{
+    font-weight: 600;
+}
+#cardhead{
+    font-weight: 1000;
+}
+#btnprops{
+    font-weight: 1000;
+}
+#btnprops:hover{
+    background-color: white;
+}
+#mywork{
+    font-weight: 1000;
+}
+#aboutme{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 1000;
+    color: #9ed361;
+}
+#contactme{
+    font-weight: 1000;
+}
+#cardbg {
+    background-image: url('/images/bodybg.jpg');
+    margin-bottom: 50px;
+  }
+#cardbody{
+    font-weight: 500;
+}
