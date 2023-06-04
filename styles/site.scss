@@ -1,13 +1,20 @@
-$primary: #9ed361;
-
+// $primary: #9ed361;
+$primary: #92b46b;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+#body{
+    padding-top: 150px;
+}
+#coverpage{
+    background-image: url('/images/bodybg.jpg');
+}
 #mypic{
     width: 300px;
     padding-bottom: 50px;
 }
 #phead{
     font-weight: 600;
+    color: white;
 }
 #cardhead{
     font-weight: 1000;
