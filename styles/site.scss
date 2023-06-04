@@ -1,15 +1,16 @@
 // $primary: #9ed361;
 $primary: #92b46b;
+$dark: #60606000;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 #body{
-    padding-top: 150px;
+    margin-top: 60px;
 }
-#coverpage{
+#coverbg{
     background-image: url('/images/bodybg.jpg');
 }
 #mypic{
-    width: 300px;
+    width: 30%;
     padding-bottom: 50px;
 }
 #phead{
