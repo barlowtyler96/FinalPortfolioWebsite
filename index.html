@@ -5,183 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/site.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>TyBar</title>
+    <title>TyBar Designs</title>
 </head>
 
 
 <body>
-<section>
-    <div class="container-fluid">
-        <div class="row bg-black fixed-top border-bottom border-5 border-primary">
-            <nav class="navbar">
-                <div class="navbar-brand">Test?
-                </div>
-                <ul class="nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#aboutme">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#mywork">My Work</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#contactme">Let's Connect</a>
-                    </li>
-                </ul>
-            </nav>  
+    <nav class="navbar bg-black sticky-top border-bottom border-5 border-primary">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                Test?
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutme">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mywork">My Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#letsconnect">Let's Connect</a>
+                </li>
+            </ul>
         </div>
-    </div>
-</section>
+    </nav>
 
-<section>
-    <div class="container-fluid" id="coverbg">
-        <div class="bg-opacity-100 text-center">
-            <div class="row p-3">
-                <div class="col-6 p-2 offset-3">
-                    <h1 class="text-primary">WELCOME.</h1>
-                    <h1 class="text-white">My name is Tyler. Thanks for checking out my portfolio.</h1>
-                </div>
-                <div class="col-2 offset-2" id="coverimg">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="container-fluid bg-black border-5 border-top border-bottom border-primary">
-        <div class="row justify-content-center">
-            <div class="h1 text-center text-primary" id="aboutme">
-                ABOUT ME
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-5 text-center">
-                <div class="h3 text-center pb-3">
-                    ASP.NET Core / C# Developer
-                </div>
-                <p class="pb-4 text-center text-white">
-                    I'm currently an IT student studying programming and living in Virginia. I discovered my love for 
-                    programming after my first class on C#. 
-                    Since then I have been spending most of my free time studying and expanding my knowledge.
-                    I feel relieved that I have found something I enjoy, with so much information at my finger 
-                    tips. If you want to hire someone with passion and determination to learn, 
-                    feel free to click the button below.
-                </p>
-                <a href="#contactme" class="btn btn-primary text-black border-primary border-2" 
-                     id="btnprops">
-                     Lets Connect &nbsp
-                    <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
-                </a>
-            </div>
-            <div class="col-sm-12 col-md-6 mt-5 text-center">
-                <img src="images/respic5.png" id="mypic">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="container-fluid bg-dark">
-        <div class="row h1 justify-content-center text-primary" id="mywork">
-            MY WORK
-        </div>
-        <div class="row p-5 border-bottom border-5 border-primary">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mb-4 g-5" >
-                <div class="card border-3 border-black rounded-4">
-                    <h5 class="card-title h3 text-center">
-                        Recipes Web API
-                    </h5>
-                    <div class="card-body text-center text-light">
-                        <p class="card-text">
-                            This solution consists of two projects. A data access class library that is referenced 
-                            in the Web Api project. 
-                        </p>
-                        <a href="https://www.google.com/" class="btn btn-primary text-black border-primary border-2" 
-                            target=”_blank” id="btnprops">SOURCE CODE &nbsp
-                        <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
-                        </a>
+    <section>
+        <div class="container-fluid card-bg">
+            <div class="bg-opacity-100 text-center">
+                <div class="row p-3">
+                    <div class="col-6 p-2 offset-3">
+                        <h1 class="text-primary">WELCOME.</h1>
+                        <h1 class="text-white">My name is Tyler. Thanks for checking out my portfolio.</h1>
+                    </div>
+                    <div class="col-2 offset-2" id="coverimg">
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mb-4 g-5" >
-                <div class="card card border-3 border-black rounded-4">
-                    <h5 class="card-title h3 text-center" >
-                        Recipes Blazor Server
-                    </h5>
-                    <div class="card-body text-center text-light">
-                        <p class="card-text">
-                            This is a blazor server application that I made to consume the Web Api. 
+        </div>
+    </section>
 
-                        </p>
-                        <a href="https://www.google.com/" class="btn btn-primary text-black  border-primary border-2" 
-                            target=”_blank” id="btnprops">SOURCE CODE &nbsp
-                            <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
-                        </a>
-                </div>
+    <section id="aboutme">
+        <div class="container-fluid bg-black border-5 border-top border-bottom border-primary">
+            <div class="row p-5">
+                <div class="h1 text-primary text-center" style="font-weight: bold;">
+                    ABOUT ME
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mb-4 g-5">
-                <div class="card border-3 border-black rounded-4">
-                    <h5 class="card-title h3 text-center">
-                        Card title
-                    </h5>
-                    <div class="card-body text-center text-light">
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            <div class="row">
+                <div class="col-sm-12 col-md-5 text-center">
+                    <div class="h3 text-center text-white pb-3">
+                        ASP.NET Core / C# Developer
+                    </div>
+                    <p class="pb-4 text-center text-white">
+                        I'm currently an IT student studying programming and living in Virginia. I discovered my love for 
+                        programming after my first C# class. 
+                        Since then I have been spending most of my free time studying and expanding my knowledge.
+                        I feel relieved that I have found something I enjoy, with so much information at my finger 
+                        tips. If you want to hire someone with passion and determination to learn, 
+                        feel free to click the button below.
+                    </p>
+                    <a href="#letsconnect" class="btn btn-custom btn-primary text-black border-primary border-2" 
+                        >
+                        Let's Connect &nbsp
+                        <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 mt-5 text-center">
+                    <img class="personal-img" src="images/respic5.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mywork">
+        <div class="container-fluid bg-dark">
+            <div class="row p-5">
+                <div class="h1 text-primary text-center" style="font-weight: bold">
+                    MY WORK
+                </div>
+            </div>
+            <div class="row pb-5 border-bottom border-5 border-primary px-2">
+                <div class="col-sm-12 col-md-6 col-xl-3 p-4" >
+                    <div class="card card-bg h-100 border-3 border-black rounded-4 shadow-lg">
+                        <h5 class="card-title pt-3 h3 text-center text-white">
+                            Recipes Web API
+                        </h5>
+                        <div class="card-body text-center text-light">
+                            <p class="card-text">
+                                This solution consists of two projects. A data access class library that is referenced 
+                                in a Web Api project. The class library uses Dapper and stored procedures with SQL Server. The Api
+                                is secured using Azure AD. An access token is granted for the Blazor server app 
+                                using the client credentials flow.
+                            </p>
+                            <a href="https://www.google.com/" class="btn btn-custom btn-primary text-black border-primary border-2" 
+                                target=”_blank”>SOURCE CODE &nbsp
+                            <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3 p-4">
+                    <div class="card card-bg h-100 card border-3 border-black rounded-4 shadow-lg">
+                        <h5 class="card-title pt-3 h3 text-center text-white" >
+                            Recipes Blazor Server
+                        </h5>
+                        <div class="card-body text-center text-light">
+                            <p class="card-text">
+                                This is a Blazor Server application that I made to consume the Recipes Web API.  
+                                This app calls the Recipes Web API after obtaining an access token using the client 
+                                credentials flow and a client secret. The app also uses Azure AD B2C to allow users to create 
+                                an account and sign in. Once a user is authenticated, they are authorized to view a page where they can submit
+                                recipes for review. I made a short video showing off the project in the repositories ReadMe.
+                            </p>
+                            <a href="https://www.google.com/" class="btn btn-custom btn-primary text-black  border-primary border-2" 
+                                target=”_blank”>SOURCE CODE &nbsp
+                                <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
+                            </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3 p-4">
+                    <div class="card card-bg h-100 border-3 border-black rounded-4 shadow-lg">
+                        <h5 class="card-title pt-3 h3 text-center text-white">
+                            Card title
+                        </h5>
+                        <div class="card-body text-center text-light">
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quasi, tempore. Ducimus, repudiandae aperiam quaerat ea doloribus voluptates ipsa delectus 
+                                explicabo error consectetur reiciendis debitis aliquam quasi doloremque beatae dicta earum 
+                                neque quidem quis accusamus aut dignissimos a saepe nam. Similique nobis eligendi tempora rem 
+                                magnam dolor modi vitae laborum voluptatibus.
+                            </p>
+                            <a href="https://www.google.com/" class="btn btn-custom btn-primary text-black border-primary border-2" 
+                                target=”_blank”>SOURCE CODE &nbsp
+                                <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
+                            </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3 p-4">
+                    <div class="card card-bg h-100 border-3 border-black rounded-4 shadow-lg">
+                        <h5 class="card-title pt-3 h3 text-center text-white">
+                            Card title</h5>
+                        <div class="card-body text-center text-light">
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                             Quasi, tempore. Ducimus, repudiandae aperiam quaerat ea doloribus voluptates ipsa delectus 
                             explicabo error consectetur reiciendis debitis aliquam quasi doloremque beatae dicta earum 
                             neque quidem quis accusamus aut dignissimos a saepe nam. Similique nobis eligendi tempora rem 
                             magnam dolor modi vitae laborum voluptatibus.
-                        </p>
-                        <a href="https://www.google.com/" class="btn btn-primary text-black border-primary border-2" 
-                            target=”_blank” id="btnprops">SOURCE CODE &nbsp
-                            <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
-                        </a>
-                </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mb-4 g-5">
-                <div class="card border-3 border-black rounded-4">
-                    <h5 class="card-title h3 text-center">
-                        Card title</h5>
-                    <div class="card-body text-center text-light">
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quasi, tempore. Ducimus, repudiandae aperiam quaerat ea doloribus voluptates ipsa delectus 
-                        explicabo error consectetur reiciendis debitis aliquam quasi doloremque beatae dicta earum 
-                        neque quidem quis accusamus aut dignissimos a saepe nam. Similique nobis eligendi tempora rem 
-                        magnam dolor modi vitae laborum voluptatibus.
-                        </p>
-                        <a href="https://www.google.com/" class="btn btn-primary text-black  border-primary border-2" 
-                            target=”_blank” id="btnprops">SOURCE CODE &nbsp
-                            <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
-                        </a>
+                            </p>
+                            <a href="https://www.google.com/" class="btn btn-custom btn-primary text-black  border-primary border-2" 
+                                target=”_blank”>SOURCE CODE &nbsp
+                                <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section>
-    <div class="container-fluid bg-black" id="contactme">
-        <div class="row">
-            <div class="text-center">
-                <h1 class="text-primary" id="contactme">Let's Connect</h1>
-                <p>
-                    <i class="fa-solid fa-mobile-screen-button fa-shake">
-                    </i> 
-                    (804) 335-4057 &nbsp 
-                    <i class="fa-regular fa-envelope fa-beat">
-                    </i>
-                    barlowtyler96@gmail.com
-                </p>
+    <section id="letsconnect">
+        <div class="container-fluid bg-black">
+            <div class="row p-2">
+                <div class="h1 text-primary text-center" style="font-weight: bold;">
+                    Let's Connect
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center">
+                    <p>
+                        <i class="fa-solid fa-mobile-screen-button fa-shake">
+                        </i> 
+                        (804) 335-4057 &nbsp 
+                        <i class="fa-regular fa-envelope fa-beat">
+                        </i>
+                        barlowtyler96@gmail.com
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 </body>
 
 </html>
