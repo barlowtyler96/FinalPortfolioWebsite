@@ -13036,10 +13036,6 @@ textarea.form-control-lg {
   color: white;
 }
 
-#cardhead {
-  font-weight: 1000;
-}
-
 #btnprops {
   font-weight: 1000;
 }
@@ -13061,13 +13057,4 @@ textarea.form-control-lg {
 
 #contactme {
   font-weight: 1000;
-}
-
-#cardbg {
-  background-image: url("/images/bodybg.jpg");
-  margin-bottom: 50px;
-}
-
-#cardbody {
-  font-weight: 500;
 }
