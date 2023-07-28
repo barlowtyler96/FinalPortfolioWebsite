@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/site.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.bundle.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>TyBar Designs</title>
 </head>
 
 
 <body>
-    <nav class="navbar bg-black sticky-top border-bottom border-5 border-primary">
-        <div class="container-fluid">
-            <div class="navbar-brand">
-                <img src="/images/logopic.png" width="59">
-            </div>
-            <ul class="nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black sticky-top border-bottom border-5 border-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/images/logopic.png" width="59" alt="TyBar logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active p-2" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#aboutme">About Me</a>
+                    <a class="nav-link p-2" href="#aboutme">About Me</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#mywork">My Work</a>
+                    <a class="nav-link p-2" href="#mywork">My Work</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#letsconnect">Let's Connect</a>
+                    <a class="nav-link p-2" href="#letsconnect">Let's Connect</a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+    
 
     <section>
-        <div class="container-fluid page-bg">
+        <div class="container-fluid page-bg py-5">
             <div class="row p-3 text-center">
                 <div class="col-6 p-2 offset-3">
                     <div class="h1 text-primary" style="font-weight: bold;">WELCOME.</div>
@@ -47,14 +54,14 @@
     </section>
 
     <section id="aboutme">
-        <div class="container-fluid bg-black border-5 border-top border-bottom border-primary">
+        <div class="container-fluid py-5 bg-black border-5 border-top border-bottom border-primary">
             <div class="row p-5">
                 <div class="h1 text-primary text-center" style="font-weight: bold;">
                     ABOUT ME
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12 col-md-6 text-center">
+                <div class="offset-md-1 col-sm-12 col-md-5 text-center">
                     <div class="h3 text-center text-white pb-3">
                         ASP.NET Core / C# Developer
                     </div>
@@ -63,8 +70,15 @@
                         programming after my first C# class. 
                         Since then I have been spending most of my free time studying and expanding my knowledge.
                         I feel relieved that I have found something I enjoy, with so much information at my finger 
-                        tips. If you want to hire someone with passion and determination to learn, 
-                        feel free to click the button below.
+                        tips. If you want to hire someone with passion and determination to learn, click the button 
+                        below to join forces!
+                    </p>
+                    <p class="pb-4 text-center text-white">
+                        Beyond my tech pursuits, I'm an eclectic soul with an insatiable thirst for adventure. When 
+                        not coding away in Virginia, you'll find me capturing stunning landscapes through my camera 
+                        lens or composing melodious tunes on my guitar. My love for culinary exploration keeps me 
+                        experimenting in the kitchen, whipping up delectable dishes from around the world. Let's 
+                        embark on a journey together!
                     </p>
                     <a href="#letsconnect" class="btn btn-custom btn-primary text-black border-primary border-2" 
                         >
@@ -73,7 +87,7 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-6 mt-5 text-center">
-                    <img class="personal-img" src="images/respic5.png" alt="Portrait">
+                    <img class="personal-img" src="images/respic5.png" alt="Self portrait">
                 </div>
             </div>
         </div>
@@ -94,15 +108,17 @@
                         </h5>
                         <div class="card-body text-center text-light">
                             <p class="card-text">
-                                Technologies used: Azure AD, OAuth 2.0, SQL Server, Dapper
+                                Technologies used: Azure AD, OAuth 2.0, SQL Server, Dapper, Postman
                             </p>
                             <br>
                             <p class="card-text">
                                 This solution consists of two projects. A data access class library that is referenced 
                                 in my Web Api project. The class library uses Dapper and stored procedures with SQL Server. The API
                                 is secured using Azure AD. An access token is granted for a Blazor server app 
-                                using the client credentials flow. See the Recipes Blazor Server app as well.
+                                using the client credentials flow (see the Recipes Blazor Server app).
                             </p>
+                        </div>
+                        <div class="card-footer text-center">
                             <a href="https://github.com/barlowtyler96/RecipesApiApp" class="btn btn-custom btn-primary text-black border-primary border-2" 
                                 target=”_blank”>SOURCE CODE &nbsp
                             <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
@@ -112,9 +128,9 @@
                 </div>
                 <div class="col-sm-12 col-md-6 p-5">
                     <div class="card card-pop bg-black h-100 border-2 border-dark rounded-4 shadow-lg">
-                        <h5 class="card-title pt-3 h3 text-center text-white" >
+                        <div class="card-title pt-3 h3 text-center text-white" >
                             Recipes Blazor Server
-                        </h5>
+                        </div>
                         <div class="card-body text-center text-light">
                             <p class="card-text">
                                 Technologies used: Bootstrap 5, Azure AD B2C, OAuth 2.0, OpenID Connect, Razor Components 
@@ -127,18 +143,20 @@
                                 an account and sign in. Once a user is authenticated, they are authorized to view a page where they can submit
                                 recipes for review. I made a short video showing off the project in the repositories ReadMe.
                             </p>
-                            <a href="https://github.com/barlowtyler96/RecipesB2CBlazor" class="btn btn-custom btn-primary text-black  border-primary border-2" 
-                                target=”_blank”>SOURCE CODE &nbsp
-                                <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
-                            </a>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="https://github.com/barlowtyler96/RecipesApiApp" class="btn btn-custom btn-primary text-black border-primary border-2" 
+                            target=”_blank”>SOURCE CODE &nbsp
+                        <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
+                        </a>
                     </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 p-5">
                     <div class="card card-pop bg-black h-100 border-2 border-dark rounded-4 shadow-lg">
-                        <h5 class="card-title pt-3 h3 text-center text-white">
+                        <div class="card-title pt-3 h3 text-center text-white">
                             Card title
-                        </h5>
+                        </div>
                         <div class="card-body text-center text-light">
                             <p class="card-text">
                                 Technologies used: ADO.NET,   
@@ -150,17 +168,19 @@
                                 neque quidem quis accusamus aut dignissimos a saepe nam. Similique nobis eligendi tempora rem 
                                 magnam dolor modi vitae laborum voluptatibus.
                             </p>
-                            <a href="https://github.com/barlowtyler96/Flashcards" class="btn btn-custom btn-primary text-black border-primary border-2" 
-                                target=”_blank”>SOURCE CODE &nbsp
-                                <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
-                            </a>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="https://github.com/barlowtyler96/RecipesApiApp" class="btn btn-custom btn-primary text-black border-primary border-2" 
+                            target=”_blank”>SOURCE CODE &nbsp
+                        <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
+                        </a>
                     </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 p-5">
                     <div class="card card-pop bg-black h-100 border-2 border-dark rounded-4 shadow-lg">
-                        <h5 class="card-title pt-3 h3 text-center text-white">
-                            Card title</h5>
+                        <div class="card-title pt-3 h3 text-center text-white">
+                            Card title</div>
                         <div class="card-body text-center text-light">
                             <p class="card-text">
                                 Technologies used:  
@@ -172,9 +192,11 @@
                             neque quidem quis accusamus aut dignissimos a saepe nam. Similique nobis eligendi tempora rem 
                             magnam dolor modi vitae laborum voluptatibus.
                             </p>
-                            <a href="https://github.com/barlowtyler96/HabitTracker" class="btn btn-custom btn-primary text-black  border-primary border-2" 
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://github.com/barlowtyler96/RecipesApiApp" class="btn btn-custom btn-primary text-black border-primary border-2" 
                                 target=”_blank”>SOURCE CODE &nbsp
-                                <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
+                            <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
                             </a>
                         </div>
                     </div>
@@ -204,6 +226,7 @@
             </div>
         </div>
     </section>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
