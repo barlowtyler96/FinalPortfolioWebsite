@@ -1,8 +1,8 @@
 $primary: #92b46b;
 $dark: #60606000;
 
-
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 .navbar-space {
     height: 80px;
 }
@@ -25,6 +25,3 @@ $dark: #60606000;
 .card-pop:hover {
     transform: scale(1.05);
 }
-
-
-
