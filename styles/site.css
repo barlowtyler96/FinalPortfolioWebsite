@@ -13018,10 +13018,64 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.navbar-space {
-  height: 80px;
+.arrow-link {
+  position: absolute;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  border-radius: 50%;
 }
 
+.arrow-link img {
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+  filter: invert(1);
+}
+
+body {
+  font-family: "Tektur", sans-serif;
+}
+
+.text-md {
+  font-size: 0.75rem;
+}
+
+.text-lg {
+  font-size: 1rem;
+}
+
+.text-xl {
+  font-size: 2rem;
+}
+
+.text-xxl {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .text-md {
+    font-size: 1.15rem;
+  }
+
+  .text-lg {
+    font-size: 2rem;
+  }
+
+  .text-xl {
+    font-size: 3rem;
+  }
+
+  .text-xxl {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+}
 .personal-img {
   width: 35%;
   padding-bottom: 50px;

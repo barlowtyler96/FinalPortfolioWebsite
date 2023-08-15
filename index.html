@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/site.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tektur">
     <title>TyBar Designs</title>
 </head>
 
@@ -11,81 +13,132 @@
 <body>
     <!-------Navbar Section------>
     <nav class="navbar navbar-expand-lg bg-black sticky-top border-bottom border-5 border-primary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="/images/logopic.png" width="59" alt="TyBar logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto text-center">
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #92b46b;" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #92b46b;" href="#aboutme">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #92b46b;" href="#mywork">My Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color: #92b46b;" href="#letsconnect">Let's Connect</a>
-                </li>
-            </ul>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logopic.png" width="59" alt="TyBar logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link mx-5" style="color: #92b46b;" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-5" style="color: #92b46b;" href="#aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-5" style="color: #92b46b;" href="#mywork">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-5" style="color: #92b46b;" href="#letsconnect">Let's Connect</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
     
-    <!-------Jumbotron Section------>
-    <section>
-        <div class="container-fluid page-bg py-5">
+    <!-------Hero Section------>
+    <section id="hero" class="hero-section">
+        <div class="container-fluid vh-100 d-flex flex-column justify-content-center page-bg">
             <div class="row p-3 text-center">
-                <div class="col-6 p-2 offset-3">
-                    <div class="h1 text-primary" style="font-weight: bold;">WELCOME.</div>
-                    <div class="h3 text-white">My name is Tyler.</div>
-                    <div class="h3 text-white">Thanks for checking out my portfolio.</div>
+                <div class="col-md-12">
+                    <h1 class="text-xxl text-primary mb-2">Welcome</h1>
+                    <p class="text-xl text-white mb-3">I'm Tyler, thanks for checking out my portfolio.</p>
                 </div>
-                <div class="col-2 offset-2">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-5 text-center px-2">
+                    <div class="p-2">
+                        <a href="#letsconnect" class="btn btn-custom btn-primary mb-3">
+                            Let's Connect &nbsp;
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="URL_OF_YOUR_RESUME_FILE.pdf" class="btn btn-custom btn-primary mb-3"
+                            download="YourName_Resume.pdf">
+                            Download Resume &nbsp;
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
                 </div>
+            </div>
+            <div class="row justify-content-center">
+                <a href="#aboutme" class="arrow-link btn-custom">
+                    <i class="fas fa-chevron-down fa-shake"></i>
+                </a>
             </div>
         </div>
     </section>
+     
 
     <!-------About Me Section------>
     <section id="aboutme">
-        <div class="container-fluid py-5 bg-black border-5 border-top border-bottom border-primary">
+        <div class="container-fluid p-5 bg-black">
             <div class="row p-5 justify-content-center">
-                <div class="h1 text-primary text-center" style="font-weight: bold;">
+                <div class="text-xl text-primary text-center" style="font-weight: bold;">
                     ABOUT ME
                 </div>
             </div>
             <div class="row">
-                <div class="offset-md-1 col-sm-12 col-md-5 text-center">
-                    <div class="h3 text-center text-white pb-3">
-                        ASP.NET Core / C# Developer
-                    </div>
-                    <p class="pb-4 text-center text-white">
-                        I'm currently an IT student studying programming and living in Virginia. I discovered my love for 
-                        programming after my first C# class. 
-                        Since then I have been spending most of my free time studying and expanding my knowledge.
-                        I feel relieved that I have found something I enjoy, with so much information at my finger 
-                        tips. If you want to hire someone with passion and determination to learn, click the button 
-                        below to join forces!
-                    </p>
-                    <p class="pb-4 text-center text-white">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores voluptates obcaecati 
-                        sequi ut eveniet sed sint doloribus quo quas perferendis velit minus iusto ad molestias 
-                        voluptatem temporibus, cupiditate cumque ex.!
-                    </p>
-                    <a href="#letsconnect" class="btn btn-custom btn-primary text-black border-primary border-2" 
-                        >
-                        Let's Connect &nbsp
-                        <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
-                    </a>
+                <div class="text-lg text-center text-white pb-5">
+                    ASP.NET Core / C# Developer
                 </div>
-                <div class="col-sm-12 col-md-6 mt-5 text-center">
-                    <img class="personal-img" src="images/respic5.png" alt="Self portrait">
+            </div>
+            <div class="row pb-5">
+                <div class="text-md col-md-10 offset-md-1 pb-4 text-center text-white">
+                    I'm currently an IT student studying programming and living in Virginia. I discovered my love for 
+                    programming after my first C# class. 
+                    Since then I have been spending most of my free time studying and expanding my knowledge.
+                    I feel relieved that I have found something I enjoy, with so much information at my finger 
+                    tips. If you want to hire someone with passion and determination to learn, click the button 
+                    below to join forces!
+                </div>
+            </div>
+            <div class="row text-white">
+                <div class="text-lg text-center text-white pb-5 mt-2">
+                    Skills
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-4 text-center mt-5">
+                    <div class="text-md">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-dark text-white p-3">FRONT END</li>
+                            <li class="list-group-item list-group-item-action">Bootstrap 5</li>
+                            <li class="list-group-item list-group-item-action">HTML 5</li>
+                            <li class="list-group-item list-group-item-action">CSS 3</li>
+                            <li class="list-group-item list-group-item-action">Razor Components</li>
+                            <li class="list-group-item list-group-item-action">Vanilla Javascript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mt-5">
+                    <div class="text-md">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-dark text-white p-3">DEV TOOLS</li>
+                            <li class="list-group-item list-group-item-action">Visual Studio 2022</li>
+                            <li class="list-group-item list-group-item-action">VS Code</li>
+                            <li class="list-group-item list-group-item-action">SSMS</li>
+                            <li class="list-group-item list-group-item-action">Postman</li>
+                            <li class="list-group-item list-group-item-action">Swagger</li>
+                            <li class="list-group-item list-group-item-action">Basic Git / Github</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mt-5">
+                    <div class="text-md">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-dark text-white p-3">BACK END</li>
+                            <li class="list-group-item list-group-item-action">.NET Core / C#</li>
+                            <li class="list-group-item list-group-item-action">SQL Server</li>
+                            <li class="list-group-item list-group-item-action">SQLite</li>
+                            <li class="list-group-item list-group-item-action">Dapper</li>
+                            <li class="list-group-item list-group-item-action">EF Core</li>
+                            <li class="list-group-item list-group-item-action">Authentication / Authorization</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,128 +146,139 @@
 
     <!-------My Work Section------>
     <section id="mywork">
-        <div class="container-fluid page-bg">
+        <div class="container-fluid pt-5 page-bg">
             <div class="row p-5">
-                <div class="h1 text-primary text-center" style="font-weight: bold">
+                <div class="text-xl text-primary text-center" style="font-weight: bold">
                     MY WORK
                 </div>
             </div>
-            <div class="row pb-5 border-bottom border-5 border-primary">
-                <div class="offset-md-1 col-sm-12 col-md-5 py-5 px-4">
-                    <div class="card card-pop bg-black h-100 border-2 border-dark rounded-4 shadow-lg">
-                        <div class="card-title pt-3 h3 text-center text-white">
+            <div class="row pb-5">
+                <div class="offset-md-1 col-sm-12 col-md-5 py-5 px-2 px-md-3">
+                    <div class="card card-pop h-100 border-3 border-black rounded-4 shadow-lg text-white">
+                        <div class="card-title pt-3 h3 text-center">
                             Recipes Blazor Server
                         </div>
                         <hr>
-                        <div class="card-body text-center text-light">
-                            <p class="card-text">
+                        <div class="card-body text-center">
+                            <div class="h5 card-text">
                                 Technologies used:
-                            </p>
-                            <p class="card-text">
+                            </div>
+                            <div class="card-text mb-4">
                                 Bootstrap 5, Azure AD B2C, OAuth 2.0, OpenID Connect, Razor Components
-                            </p>
-                            <br>
-                            <p class="card-text">
+                            </div>
+                            <div class="card-text mb-4">
                                 This is a Blazor Server application that I made to consume the Recipes Web API.
                                 This app calls the Recipes Web API after obtaining an access token using the client
                                 credentials flow and a client secret. The app also uses Azure AD B2C to allow users to create
                                 an account and sign in. Once a user is authenticated, they are authorized to view a page where they can submit
-                                recipes for review. I made a short video showing off the project in the repositories ReadMe.
-                            </p>
-                        </div>
-                        <div class="text-center py-3 embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dlsZ7XV1Vsk" title="YouTube video player"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                            </iframe>
+                                recipes for review. I made a short video showing off the project.
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.youtube.com/embed/dlsZ7XV1Vsk" title="YouTube video player" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                            </div>
                         </div>
                         <div class="card-footer text-center">
                             <a href="https://github.com/barlowtyler96/RecipesB2CBlazor" class="btn btn-custom btn-primary text-black border-primary border-2"
-                                target="_blank">SOURCE CODE &nbsp;
+                                target="_blank">Repository &nbsp;
                                 <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-sm-12 col-md-5 py-5 px-4" >
-                    <div class="card card-pop bg-black h-100 border-2 border-dark rounded-4 shadow-lg">
-                        <div class="card-title pt-3 h3 text-center text-white">
+                <div class="col-sm-12 col-md-5 py-5 px-2 px-md-3" >
+                    <div class="card card-pop h-100 border-3 border-black rounded-4 shadow-lg text-white">
+                        <div class="card-title pt-3 h3 text-center">
                             Recipes Web API
                         </div>
                         <hr>
-                        <div class="card-body text-center text-light">
-                            <p class="card-text">
+                        <div class="card-body text-center">
+                            <div class="h5 card-text">
                                 Technologies used: 
-                            </p>
-                            <p class="card-text">
+                            </div>
+                            <div class="card-text mb-4">
                                 Azure AD, OAuth 2.0, SQL Server, Dapper, Postman
-                            </p>
-                            <br>
-                            <p class="card-text">
-                                This solution consists of two projects. A data access class library that is referenced 
-                                in my Web Api project. The class library uses Dapper and stored procedures with SQL Server. The API
-                                is secured using Azure AD. An access token is granted for a Blazor server app 
-                                using the client credentials flow (see the Recipes Blazor Server app).
-                            </p>
+                            </div>
+                            <div class="card-text mb-4">
+                                This solution consists of two projects, a class library for data access and a web API. My data access library utilizes 
+                                dapper with stored procedures. The library is referenced in my API. The API is then consumed by my blazor server app. 
+                                My favorite feature is the server-side paging. When a user searches for a recipe on the blazor app, only the results 
+                                for the current page are returned and stored in memory.
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.youtube.com/embed/CcnFogJZYZ8" title="YouTube video player" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                            </div>
                         </div>
                         <div class="card-footer text-center">
                             <a href="https://github.com/barlowtyler96/RecipesApiApp" class="btn btn-custom btn-primary text-black border-primary border-2" 
-                                target=”_blank”>SOURCE CODE &nbsp
+                                target=”_blank”>Repository &nbsp
                             <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="offset-md-1 col-sm-12 col-md-5 py-5 px-4">
-                    <div class="card card-pop bg-black h-100 border-2 border-dark rounded-4 shadow-lg">
-                        <div class="card-title pt-3 h3 text-center text-white">
-                            Card title
+
+                <div class="offset-md-1 col-sm-12 col-md-5 py-5 px-2 px-md-3">
+                    <div class="card card-pop h-100 border-3 border-black rounded-4 shadow-lg text-white">
+                        <div class="card-title pt-3 h3 text-center">
+                            Flashcards App
                         </div>
                         <hr>
-                        <div class="card-body text-center text-light">
-                            <p class="card-text">
+                        <div class="card-body text-center">
+                            <div class="h5 card-text">
                                 Technologies used:  
-                            </p>
-                            <p class="card-text">
+                            </div>
+                            <div class="card-text mb-4">
                                 ADO.NET, SQL Server  
-                            </p>
-                            <br>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                                Quasi, tempore. Ducimus, repudiandae aperiam quaerat ea doloribus voluptates ipsa delectus 
-                                explicabo error consectetur reiciendis debitis aliquam quasi doloremque beatae dicta earum 
-                                neque quidem quis accusamus aut dignissimos a saepe nam. Similique nobis eligendi tempora rem 
-                                magnam dolor modi vitae laborum voluptatibus.
-                            </p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="https://github.com/barlowtyler96/RecipesApiApp" class="btn btn-custom btn-primary text-black border-primary border-2" 
-                            target=”_blank”>SOURCE CODE &nbsp
-                        <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
-                        </a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-5 py-5 px-4">
-                    <div class="card card-pop bg-black h-100 border-2 border-dark rounded-4 shadow-lg">
-                        <div class="card-title pt-3 h3 text-center text-white">
-                            Card title
-                        </div>
-                        <hr>
-                        <div class="card-body text-center text-light">
-                            <p class="card-text">
-                                Technologies used:  
-                            </p>
-                            <br>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quasi, tempore. Ducimus, repudiandae aperiam quaerat ea doloribus voluptates ipsa delectus 
-                            explicabo error consectetur reiciendis debitis aliquam quasi doloremque beatae dicta earum 
-                            neque quidem quis accusamus aut dignissimos a saepe nam. Similique nobis eligendi tempora rem 
-                            magnam dolor modi vitae laborum voluptatibus.
-                            </p>
+                            </div>
+                            <div class="card-text mb-4">
+                                This program was developed using SQL Server, SSMS, ADO.NET and C#. This application can be used to create stacks of 
+                                flashcards to study. The user is given one side of a card from a stack and must enter the correct answer. A record of 
+                                your scores is kept and can be displayed. See the repository for pics and more info!
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.youtube.com/embed/3ENbHWarpU0" title="YouTube video player" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                            </div>
                         </div>
                         <div class="card-footer text-center">
                             <a href="https://github.com/barlowtyler96/RecipesApiApp" class="btn btn-custom btn-primary text-black border-primary border-2" 
-                                target=”_blank”>SOURCE CODE &nbsp
+                            target=”_blank”>Repository &nbsp
+                            <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-5 py-5 px-2 px-md-3">
+                    <div class="card card-pop h-100 border-3 border-black rounded-4 shadow-lg text-white">
+                        <div class="card-title pt-3 h3 text-center">
+                            Habit Tracker
+                        </div>
+                        <hr>
+                        <div class="card-body text-center">
+                            <div class="h5 card-text">
+                                Technologies used:  
+                            </div>
+                            <div class="card-text mb-4">
+                                ADO.NET, SQL Server  
+                            </div>
+                            <div class="card-text mb-4">
+                                This is the first project where i implemented CRUD operations. The application can be used to track any habit and units for that habit.
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.youtube.com/embed/fIR5Xb8UGVM" title="YouTube video player" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://github.com/barlowtyler96/RecipesApiApp" class="btn btn-custom btn-primary text-black border-primary border-2" 
+                                target=”_blank”>Repository &nbsp
                             <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
                             </a>
                         </div>
@@ -226,27 +290,54 @@
 
     <!-------Let's Connect Section------>
     <section id="letsconnect">
-        <div class="container-fluid bg-black">
+        <div class="container-fluid p-3 bg-black text-center">
             <div class="row p-2">
-                <div class="h1 text-primary text-center" style="font-weight: bold;">
+                <div class="text-xl text-primary text-center" style="font-weight: bold;">
                     Let's Connect
                 </div>
             </div>
-            <div class="row">
+            <div class="row p-2 border-bottom border-primary">
+                <form action="https://formspree.io/f/mjvqyewv" method="POST">
+                    <div class="py-2">
+                      <label for="name">Name:</label>
+                    </div>
+                    <input type="text" id="name" name="name" required>
+                    <div class="py-2">
+                      <label for="email">Email:</label>
+                    </div>
+                    <input type="email" id="email" name="_replyto" required>
+                    <div class="py-2">
+                      <label for="subject">Subject:</label>
+                    </div>
+                    <input type="text" id="subject" name="subject" required>
+                    <div class="py-2">
+                      <label for="message">Message:</label>
+                    </div>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <div class="py-2">
+                      <button class="bg-primary text-black" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="row mt-4">
                 <div class="text-center">
-                    <p>
+                    <div class="col-12">
                         <i class="fa-solid fa-mobile-screen-button fa-shake">
                         </i> 
                         (804) 335-4057 &nbsp 
+                        
+                    </div>
+                    <div class="col-12">
                         <i class="fa-regular fa-envelope fa-beat">
                         </i>
                         barlowtyler96@gmail.com
-                    </p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-------Scripts------>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>    
 </body>
-
 </html>

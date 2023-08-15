@@ -2,9 +2,54 @@ $primary: #92b46b;
 $dark: #60606000;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+.arrow-link {
+    position: absolute;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-radius: 50%;
+}
+.arrow-link img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
+    filter: invert(1);
+}
+body {
+    font-family: 'Tektur', sans-serif;
+}
+.text-md{
+    font-size: .75rem;
+}
+.text-lg {
+    font-size: 1.0rem;
+}
+.text-xl{
+    font-size: 2rem;
+}
+.text-xxl{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
 
-.navbar-space {
-    height: 80px;
+@media (min-width: 768px) {
+    .text-md{
+        font-size: 1.15rem;
+    }
+    .text-lg {
+        font-size: 2.0rem;
+    }
+    .text-xl{
+        font-size: 3rem;
+    }
+    .text-xxl{
+        font-size: 5rem;
+        font-weight: bold;
+    }
 }
 .personal-img{
     width: 35%;
