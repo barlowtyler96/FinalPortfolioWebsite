@@ -13018,6 +13018,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.slide-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.active.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .arrow-link {
   position: absolute;
   bottom: 20px;
