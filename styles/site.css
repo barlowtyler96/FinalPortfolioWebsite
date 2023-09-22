@@ -13112,11 +13112,3 @@ body {
 .btn-custom:hover {
   background-color: white;
 }
-
-.card-pop {
-  transition: transform 0.3s ease;
-}
-
-.card-pop:hover {
-  transform: scale(1.05);
-}
