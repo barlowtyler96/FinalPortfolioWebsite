@@ -92,11 +92,7 @@
             </div>
             <div class="row pb-5">
                 <div class="text-md col-md-10 offset-md-1 pb-4 text-center text-white">
-                    I'm currently an IT student studying programming and living in Virginia. I discovered my love for
-                    programming after my first C# course.
-                    Since then, I have been spending most of my free time studying and expanding my knowledge.
-                    I feel relieved that I have found something I enjoy, with so much information at my finger
-                    tips. If you want to hire someone with passion and determination to learn, let's join forces!
+                    When I'm not gaming, camping, hiking, or fishing, I immerse myself in the fascinating world of coding. As an IT student specializing in programming here in Virginia, my passion for coding arose after my first C# course. The prospect of continually learning within this endless field fascinates me. If you're seeking someone fueled by determination and an unyielding passion to grow, let's join forces!
                 </div>
             </div>
             <div class="row text-white">
@@ -119,7 +115,8 @@
                             <li class="list-group-item">CSS 3</li>
                             <li class="list-group-item">Razor Syntax</li>
                             <li class="list-group-item">Razor Components</li>
-                            <li class="list-group-item">Vanilla Javascript</li>
+                            <li class="list-group-item">Javascript / Typescript</li>
+                            <li class="list-group-item">Angular</li>
                         </ul>
                     </div>
                 </div>
@@ -135,8 +132,8 @@
                             <li class="list-group-item">VS Code</li>
                             <li class="list-group-item">SSMS</li>
                             <li class="list-group-item">Postman</li>
-                            <li class="list-group-item">Swagger(OpenApi)</li>
-                            <li class="list-group-item">Basic Git / Github</li>
+                            <li class="list-group-item">Swagger(OpenAPI)</li>
+                            <li class="list-group-item">Git / Github</li>
                         </ul>
                     </div>
                 </div>
@@ -186,16 +183,16 @@
                                 Technologies used:
                             </div>
                             <div class="card-text text-center mb-4">
-                                Bootstrap 5, Azure AD B2C, Angular CLI, RxJS <br>
+                                Bootstrap 5, Azure AD B2C, RxJS, OAuth 2.0, OIDC <br>
                                 <i>Hosted on Azure Static Web Apps</i>
                             </div>
                             <div class="card-text">
-                                This project showcases Azure Active Directory B2C and Angular. The app allows 
+                                This project showcases Azure Active Directory B2C + Angular. The app allows 
                                 people from around the world to share their favorite recipes. Users can create
                                 an account, sign in, edit their profile, share recipes, 
                                 and  explore other users' shared recipes. User's can also favorite recipes and 
-                                view recipe that they have shared all in one place. All recipe data is 
-                                posted and retrieved from my custom ASP.NET Core Web API.
+                                view recipes that they have shared all in one place. All recipe data is 
+                                posted and retrieved by my ASP.NET Core Web API.
                             </div>
                         </div>
                         <div class="card-footer border-top border-black text-center">
@@ -204,7 +201,7 @@
                                 target="_blank">Repository &nbsp;
                                 <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
                             </a>
-                            <a href="https://culinarysharesblazor.azurewebsites.net/"
+                            <a href="https://culinaryshares.com/"
                                 class="btn btn-custom btn-primary text-black border-primary border-2"
                                 target="_blank">Check it out &nbsp;
                                 <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
@@ -227,15 +224,12 @@
                                 Technologies used:
                             </div>
                             <div class="card-text text-center mb-4">
-                                Bootstrap 5, Azure AD B2C, OAuth 2.0, OpenID Connect, Razor Components <br>
+                                Bootstrap 5, Azure AD B2C, OAuth 2.0, OIDC, Razor Components <br>
                                 <i>Hosted on Azure Web Apps</i>
                             </div>
                             <div class="card-text">
-                                This is a Blazor Server application that I made as a clone of the CulinaryShares Angular app.
-                                The app calls the Recipes Web API after obtaining an access token on behalf of a user.
-                                The app uses Azure AD B2C to allow users to create an account and sign in. Once
-                                a user is authenticated, they are authorized to view a page where they can submit
-                                recipes for review. I made a short video showing off the project.
+                                This project showcases Azure Active Directory B2C + Blazor. It is a clone of the CulinaryShares Angular app.
+                                I made a short video showing off the project.
                             </div>
                         </div>
                         <div class="card-footer border-top border-black text-center">
@@ -274,10 +268,8 @@
                                 This solution consists of two projects, a class library for data access and a web API.
                                 My data access library utilizes
                                 dapper with stored procedures. The library is referenced in my API. The API is then
-                                consumed by my blazor server app.
-                                My favorite feature is the server-side paging. When a user searches for a recipe on the
-                                blazor app, only the results
-                                for the current page are returned and stored in memory.
+                                consumed by my Blazor/Angular app.
+                                My favorite feature is the server-side paging. When a user searches for a recipe, only the results for the current page are returned and stored in memory.
                             </div>
                         </div>
                         <div class="card-footer border-top border-black text-center">
@@ -288,7 +280,7 @@
                             </a>
                             <a href="https://documenter.getpostman.com/view/27883820/2s9YCARW1m"
                                 class="btn btn-custom btn-primary text-black border-primary border-2"
-                                target="_blank">Postman Doc &nbsp;
+                                target="_blank">Postman Docs &nbsp;
                                 <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
                             </a>
                         </div>
@@ -391,7 +383,10 @@
                     </div>
                     <textarea id="message" name="message" rows="4" required></textarea>
                     <div class="py-2">
-                        <button class="bg-primary text-black" type="submit">Send</button>
+                        <button class="btn btn-custom btn-primary text-black" type="submit">
+                            Send
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </button>
                     </div>
                 </form>
             </div>
